@@ -1,0 +1,72 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+  NewCops: enable
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+  IndentationWidth: 4
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+  IndentationWidth: 2
+Layout/ArrayAlignment:
+  Enabled: false
+Layout/HashAlignment:
+  Enabled: false
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+  IndentationWidth: 4
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+  IndentationWidth: 4
+Layout/FirstHashElementIndentation:
+  Enabled: false
+Layout/FirstArgumentIndentation:
+  Enabled: false
+Layout/FirstArrayElementIndentation:
+  Enabled: false
+Layout/LineLength:
+  Max: 100
+
+Style/WordArray:
+  EnforcedStyle: brackets
+Style/SymbolArray:
+  EnforcedStyle: brackets
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+Style/ZeroLengthPredicate:
+  Enabled: false
+Style/ConditionalAssignment:
+  EnforcedStyle: assign_inside_condition
+Style/Documentation:
+  Enabled: false
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
