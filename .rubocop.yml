@@ -3,6 +3,7 @@ require: rubocop-rails
 AllCops:
   Exclude:
     - db/schema.rb
+    - vendor/cache/**/*
   NewCops: enable
 
 Rails/UnknownEnv:
